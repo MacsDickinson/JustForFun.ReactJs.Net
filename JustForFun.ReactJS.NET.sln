@@ -5,6 +5,17 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustForFun.ReactJS.NET", "JustForFun.ReactJS.NET\JustForFun.ReactJS.NET.csproj", "{2460F467-5FD4-48D2-A732-5C924A4492A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{19DCE91F-9535-4491-A0E4-64C07DFE4FFC}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{2E7EFF1B-2D08-4265-8D9D-E2E2FEAE5371}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\JustForFunReactJSNET-WAWS-dev.json = PublishScripts\Configurations\JustForFunReactJSNET-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E7EFF1B-2D08-4265-8D9D-E2E2FEAE5371} = {19DCE91F-9535-4491-A0E4-64C07DFE4FFC}
 	EndGlobalSection
 EndGlobal
