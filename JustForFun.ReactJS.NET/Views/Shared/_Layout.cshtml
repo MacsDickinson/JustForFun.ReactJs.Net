@@ -11,12 +11,16 @@
 <body>
 
     <div class="ui container">
+        @Html.React("Menu", new { activeMenuItem = ViewBag.Title })
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - MacsDickinson</p>
-        </footer>
+        @Html.React("Footer", new { })
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.7/semantic.min.js"></script>
+    <script src="@Url.Content("~/Scripts/templates/menu.jsx")"></script>
+    <script src="@Url.Content("~/Scripts/templates/footer.jsx")"></script>
+    @Html.ReactInitJavaScript()
 </body>
 </html>
