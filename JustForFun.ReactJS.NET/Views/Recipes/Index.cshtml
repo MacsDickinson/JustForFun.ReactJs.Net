@@ -1,0 +1,19 @@
+﻿@model IEnumerable<JustForFun.ReactJS.NET.Models.RecipeModel>
+@{
+    ViewBag.Title = "Recepies";
+}
+
+<h2>Recipes</h2>
+
+@Html.React("RecipeList", new
+{
+    initialData = Model,
+    url = Url.Action("All"),
+    submitUrl = Url.Action("Add"),
+    pollInterval = 2000,
+})
+
+@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/templates/recipes.jsx")"></script>
+}

@@ -21,6 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.7/semantic.min.js"></script>
     <script src="@Url.Content("~/Scripts/templates/menu.jsx")"></script>
     <script src="@Url.Content("~/Scripts/templates/footer.jsx")"></script>
+    @RenderSection("Scripts", false)
     @Html.ReactInitJavaScript()
 </body>
 </html>

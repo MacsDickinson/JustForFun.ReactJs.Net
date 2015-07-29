@@ -3,7 +3,7 @@
         return {
             menuItems: [
               { title: 'Home', url: '/' },
-              { title: 'Recepies', url: '/recepies' },
+              { title: 'Recepies', url: '/recipes' },
               { title: 'Sign In', url: '/account/sign-in', right: true }
             ],
             activeMenuItem: 'Home'
