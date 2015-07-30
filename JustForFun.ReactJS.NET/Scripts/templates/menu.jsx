@@ -27,7 +27,7 @@
             );
         }.bind(this));
         return (
-          React.DOM.div({ className: 'ui secondary pointing menu' }, menuItems)
+          React.DOM.div({ className: 'ui secondary pointing menu green' }, menuItems)
         );
     }
 });

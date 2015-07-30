@@ -7,10 +7,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.7/semantic.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,100|Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-    <div class="ui container">
+    <div class="ui container" style="font-family: 'Source Sans Pro', sans-serif; !important">
+        <h1 style="font-family: 'Josefin Sans', sans-serif; text-align: center; font-size: 5em; font-weight: 100; color: #21ba45;">Juicify.it</h1>
         @Html.React("Menu", new { activeMenuItem = ViewBag.Title })
         @RenderBody()
         <hr />
