@@ -19,19 +19,19 @@ namespace JustForFun.ReactJS.NET.Controllers
         // GET: Recipes
         public ActionResult Index()
         {
-            var all = _recipes.GetAll().Select(x => (RecipeModel)x.Value);
+            var all = _recipes.GetAll().Select(x => (RecipeCardModel)x.Value);
             return View(all);
         }
 
         [OutputCache(Location = OutputCacheLocation.None)]
         public ActionResult All()
         {
-            var all = _recipes.GetAll().Select(x => (RecipeModel)x.Value);
+            var all = _recipes.GetAll().Select(x => (RecipeCardModel)x.Value);
             return Json(all, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
-        public ActionResult AddRecipe(RecipeModel recipe)
+        public ActionResult AddRecipe(RecipeCardModel recipe)
         {
             _recipes.Add(recipe.ToDomain());
             return Content("Success :)");
