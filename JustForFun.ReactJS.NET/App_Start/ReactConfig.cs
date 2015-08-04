@@ -9,9 +9,10 @@ namespace JustForFun.ReactJS.NET
 		public static void Configure()
         {
             ReactSiteConfiguration.Configuration
-                .AddScript("~/Scripts/templates/recipes.jsx")
+                .AddScript("~/Scripts/lib/showdown.min.js")
                 .AddScript("~/Scripts/templates/menu.jsx")
-                .AddScript("~/Scripts/templates/footer.jsx");
+                .AddScript("~/Scripts/templates/footer.jsx")
+                .AddScript("~/Scripts/templates/recipes.jsx");
         }
 	}
 }

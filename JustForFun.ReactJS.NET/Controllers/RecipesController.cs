@@ -1,7 +1,6 @@
 ﻿using JustForFun.ReactJS.Data.Repositories;
 using JustForFun.ReactJS.NET.Models;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.UI;
 
@@ -18,20 +17,9 @@ namespace JustForFun.ReactJS.NET.Controllers
         }
 
         // GET: Recipes
-        public ActionResult Index(string id)
+        public ActionResult Index()
         {
-            if (string.IsNullOrEmpty(id))
-            {
-                return View(_recipes.GetAll().Select(x => (RecipeCardModel)x.Value));
-            }
-
-            if (!_recipes.GetAll().ContainsKey(id))
-            {
-                throw new HttpException(404, "No recipe found with the specified id.");
-            }
-
-            var recipe = (RecipeCardModel)_recipes.GetAll()[id];
-            return View("RecipeDetails", recipe);
+            return View(_recipes.GetAll().Select(x => (RecipeCardModel)x.Value));
         }
 
         [OutputCache(Location = OutputCacheLocation.None)]

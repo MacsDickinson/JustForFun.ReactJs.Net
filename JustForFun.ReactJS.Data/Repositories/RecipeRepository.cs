@@ -22,6 +22,7 @@ namespace JustForFun.ReactJS.Data.Repositories
                     Id = "kid-friendly-green-juice-recipe",
                     Name = "Kid-Approved Green Power Juice",
                     Category = RecipeCategory.Juice,
+                    Servings = 1,
                     ImageUrl = "http://www.rebootwithjoe.com/wp-content/uploads/2015/07/Kid-Approved-Green-Juice2.jpg",
                     Intro = "Want to help your kids reach for more veggie-based juices? Make this sweet but veggie-heavy juice and your child will be asking for more.",
                     Description = @"Want to help your kids reach for more veggie-based juice?  Besides the visual appeal of color and container, the more they participate the more likely they are to want to share in the fun and deliciousness.  I actually enjoy grocery shopping and trips to the farmer’s market with my kids.  I know this may be bit hard to believe…what busy mom doesn’t want to just get in and out of the store quickly?! But I find that having them help make choices at the store can make a big difference in the choices they make at home, friends houses and dining out.  Plus, as they get older, helping me carry groceries or quickly running back to grab an item I forgot can make them much more of a help than a hindrance on errands.  And I selfishly just love spending time with my boys so while they’re still willing to hang out with me, I’ll take whatever I can get!
@@ -50,6 +51,7 @@ This juice has plenty of Vitamin C-rich cruciferous vegetables that help to supp
                 Id = "kickin-it-with-kale-juice-recipe",
                 Name = "Kickin’ it with Kale Juice",
                 Category = RecipeCategory.Juice,
+                Servings = 1,
                 ImageUrl = "http://www.rebootwithjoe.com/wp-content/uploads/2015/06/Kickin-it-with-Kale-420.jpg",
                 Intro = "Kick back, relax, and drink in this juice that's full of green goodness like anti-inflammatories and cancer-fighting properties you're sure to love.",
                 Description = @"Kick back, relax, and drink in this juice that’s full of green goodness that you’re sure to love. Broccoli and kale, both members of the cabbage (Brassica) family, offer immense health benefits in the prevention of cancer, particularly breast, prostate and colon, and helps to enhance the function of the liver (your body’s fat burner!). The sweet pear packs in a high dose of soluble fiber and sweetens this juice right up. Enjoy!",
